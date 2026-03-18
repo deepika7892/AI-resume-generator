@@ -21,7 +21,7 @@ public class ResumeServiceImplementation implements ResumeService {
     public ResumeDto generateResumeJson(String userInput) {
 
         try {
-            URL url = new URL("https://api.groq.com/openai/v1/chat/completions");
+            URL url = new URL("groq.api.key");
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 
             conn.setRequestMethod("POST");
